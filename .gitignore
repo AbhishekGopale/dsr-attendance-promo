@@ -1,0 +1,56 @@
+# ==========================================
+# Viewlytics / DSR Attendance Repo .gitignore
+# ==========================================
+
+# Environment & Credentials (CRITICAL)
+.env
+.env.*
+!.env.example
+*.master_keys*
+MASTER_KEYS*
+*.pem
+*.jks
+*.keystore
+!debug.keystore
+releaseKeystore*
+my-upload-key*
+local.properties
+
+# Dependencies
+node_modules/
+*/node_modules/
+*/*/node_modules/
+/mobile/node_modules/
+
+# Android Build Outputs
+build/
+*/build/
+*/*/build/
+.gradle/
+*/.gradle/
+*.apk
+*.aab
+*.apks
+.cxx/
+*.hprof
+*.iml
+
+# iOS Build Outputs
+/mobile/ios/Pods/
+/mobile/ios/build/
+DerivedData/
+*.ipa
+*.xcuserstate
+ios/.xcode.env.local
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.bak
+*.tmp
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
